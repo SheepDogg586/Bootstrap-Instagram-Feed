@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Instagram Feed</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/109da3a323.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <span>
+                <i class="fa-brands fa-instagram"></i> 
+                <a class="navbar-brand text-sm-center" href="#">Instagram</a>
+              </span>
+            </div>
+            <button type="button" class="btn btn-success btn-sm text-nowrap bg-green mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="mb-3 pe-3 ps-3">
+                    <label for="message-text" class="col-form-label">Caption:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                    <button class="fa-solid fa-camera border px-2 py-1 mt-2 me-1 rounded-1"></button>
+                    <button class="fa-solid fa-location-dot border px-2 py-1 rounded-1"></button>
+                  </div>            
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-sm mx-7" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fa-sharp fa-solid fa-gear"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessiblity</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li><a class="dropdown-item border-top text-danger" href="#">Logout</a></li>
+                </ul>
+              </div>
+        </nav>
+        <div class="navButtons">
+          <form action="index2.html">
+            <button class="fa-solid fa-table-cells pe-3 border-0 bg-white"></button>
+          </form>
+          <form action="index.html">
+            <button class="fa-solid fa-square ps-3 border-0 bg-white"></button> 
+          </form>
+        </div>   
+        <div>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="https://th.bing.com/th/id/R.f2807df4f9659c4b6032145cae0deb2f?rik=qwj6pQQ%2bwOME4g&pid=ImgRaw&r=0" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://pictures.topspeed.com/IMG/jpg/201810/2019-ford-gt-carbon-serie.jpg" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://th.bing.com/th/id/R.58844260e631c8a4c2de0bc9de69b8fe?rik=aWjZQ7UYjnHXUQ&riu=http%3a%2f%2fautonxt.net%2fwp-content%2fuploads%2f2016%2f02%2fautocontentexp.comwp-contentuploads201602Bugatti-Chiron12-bbe253df67666d89f540d5bc1d1afdb6234b1ce2.jpg&ehk=VMDiQqyuJHTpQ70WUEDkKm8H3bO7CJ70qUSW9hU1cnM%3d&risl=&pid=ImgRaw&r=0" class="img-fluid">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/mclaren-600lt-spider.jpg" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://th.bing.com/th/id/R.3dcbab9c21c4a0b18cb79e98c7807427?rik=GKB8jh6XAGmEnA&riu=http%3a%2f%2fcdn.carbuzz.com%2fgallery-images%2f1600%2f432000%2f0%2f432096.jpg&ehk=qr4GYC2FGVoRNwackrgDMB9Mw0%2bbh69oRKjVcpYAI18%3d&risl=&pid=ImgRaw&r=0" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://th.bing.com/th/id/R.b460dea2b029721dfd9b6ee1d362688f?rik=WU8PIrG6gwK2gw&pid=ImgRaw&r=0" class="img-fluid">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="https://th.bing.com/th/id/R.b82329c7409753776da244dc95fdd709?rik=DFoHwT0AvOnW7w&pid=ImgRaw&r=0" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://th.bing.com/th/id/R.4432712cf864e0a93404f779bfc14509?rik=OQ3Y1PvCLK0I5w&pid=ImgRaw&r=0" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://3.bp.blogspot.com/-dVuQzro7WQg/XAseCzaqWUI/AAAAAAAAC1s/lW3TSQDrRiQ-rof9XOtQC0PWrUA2y43VACLcBGAs/s1600/Screen%2BShot%2B2018-12-08%2Bat%2B2.23.56%2BAM.png" class="img-fluid">
+              </div>
+            </div>
+          </div>    
+    </body>

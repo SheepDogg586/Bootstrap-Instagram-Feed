@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Instagram Feed</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/109da3a323.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <span>
+                    <i class="fa-brands fa-instagram"></i> 
+                    <a class="navbar-brand text-sm-center" href="#">Instagram</a>
+                  </span>
+                </div>
+                <button type="button" class="btn btn-success btn-sm text-nowrap bg-green mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Create a new post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="mb-3 pe-3 ps-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                        <button class="fa-solid fa-camera border px-2 py-1 mt-2 me-1 rounded-1"></button>
+                        <button class="fa-solid fa-location-dot border px-2 py-1 rounded-1"></button>
+                      </div>            
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-sm mx-7" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fa-sharp fa-solid fa-gear"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accessiblity</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                      <li><a class="dropdown-item border-top text-danger" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+            </nav>
+            <div class="navButtons">
+              <form action="index2.html">
+                <button class="fa-solid fa-table-cells pe-3 border-0 bg-white"></button>
+              </form>
+              <form action="index.html">
+                <button class="fa-solid fa-square ps-3 border-0 bg-white"></button> 
+              </form>
+            </div>   
+            <div>
+              <div class="card mx-auto" style="width: 40rem;">
+                <div class="card-body p-0">
+                  <span>
+                    <span class="card-title h5 ps-2">2017 Dodge Viper</span>
+                    <span class="card-date float-end pe-2">5/48</span>
+                  </span>
+                  <img src="https://th.bing.com/th/id/R.f2807df4f9659c4b6032145cae0deb2f?rik=qwj6pQQ%2bwOME4g&pid=ImgRaw&r=0" class="img-fluid mt-3" alt="viperCar">
+                  <h6 class="card-subtitle mb-2 text-muted py-2 ps-2"><b>13,426 Likes</b></h6>
+                  <p class="card-text ps-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card mx-auto my-5" style="width: 40rem;">
+                <div class="card-body p-0">
+                  <span>
+                    <span class="card-title h5 ps-2">2019 Ford GT</span>
+                    <span class="card-date float-end">6/48</span>
+                  </span>
+                  <img src="https://pictures.topspeed.com/IMG/jpg/201810/2019-ford-gt-carbon-serie.jpg" class="img-fluid mt-3" alt="fordCar">
+                  <h6 class="card-subtitle mb-2 text-muted py-2 ps-2"><b>500,000 Likes</b></h6>
+                  <p class="card-text ps-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card mx-auto my-5" style="width: 40rem;">
+                <div class="card-body p-0">
+                  <span>
+                    <span class="card-title h5">2017 Bugatti Chiron</span>
+                    <span class="card-date float-end">7/48</span>
+                  </span>
+                  <img src="https://th.bing.com/th/id/R.58844260e631c8a4c2de0bc9de69b8fe?rik=aWjZQ7UYjnHXUQ&riu=http%3a%2f%2fautonxt.net%2fwp-content%2fuploads%2f2016%2f02%2fautocontentexp.comwp-contentuploads201602Bugatti-Chiron12-bbe253df67666d89f540d5bc1d1afdb6234b1ce2.jpg&ehk=VMDiQqyuJHTpQ70WUEDkKm8H3bO7CJ70qUSW9hU1cnM%3d&risl=&pid=ImgRaw&r=0" class="img-fluid mt-3" alt="bugattiCar">
+                  <h6 class="card-subtitle mb-2 text-muted py-2 ps-2"><b>17,150 Likes</b></h6>
+                  <p class="card-text ps-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
