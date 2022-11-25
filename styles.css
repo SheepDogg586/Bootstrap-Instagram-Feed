@@ -8,14 +8,14 @@
     color: #333;
     border-color: #adadad;
     border-radius: 25px;
-    }
-    .btn-default:hover,
+    }*/
+    /* .btn-default:hover,
     .btn-default:focus,
     .btn-default:active {
-    background-color: #ebebeb;
-    color: #333;
+    background-color: blue;
+    color: white;
     border-color: #adadad;
-    } */
+    }  */
     .navButtons {
         display: flex;
         flex-direction: row;
@@ -28,5 +28,14 @@
         height: 300px;
         margin-bottom: 2%;
     }
+    @keyframes example {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    .fading{
+        animation-name: example;
+        animation-duration: 3s;
+    }
+
     
      
